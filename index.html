@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Arifful Fikri</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Arifful Fikri</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#certificate">Certificate</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile_picture2.png" alt="My profile_picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, i am</p>
+            <h1 class="title">Arifful Fikri</h1>
+            <p class="section__text__p2">Data Enthusiast</p>
+            <div class="btn_container">
+                <button 
+                class="btn btn-color-2" onclick="window.open('./assets/AriffulFikri_CV.pdf')">Download CV
+                </button>
+                <button 
+                class="btn btn-color-1" onclick="window.href='./#contact'">Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkdn_logo.png" 
+                alt="My Linkedn profile"
+                class="icon"
+                onclick="location.href='https://linkedin.com/in/ariffulfikri/'"
+                >
+                <img 
+                src="./assets/githublogo.png" 
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/RIFFMBR20/'"
+                >
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <img 
+            src="/assets/aboutt-me.png" 
+            alt="Profile picture"
+            class="about-pic"
+            >
+        </div>
+        <div class="about-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <img 
+                    src="/assets/logo-experience.png" 
+                    alt="Experience Icon"
+                    class="icon"
+                    >
+                    <h3>Experience</h3>
+                    <p>1+years <br> Machine Learning</p>
+                </div>
+                <div class="details-container">
+                    <img 
+                    src="/assets/logo-experience.png" 
+                    alt="Education Icon"
+                    class="icon"
+                    >
+                    <h3>Education</h3>
+                    <p>Bachelor degree of Computer Engineering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
